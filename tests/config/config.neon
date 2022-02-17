@@ -1,0 +1,21 @@
+parameters:
+	resourcesDir: ../Resources/
+
+extensions:
+	autoloader: Flexsyscz\AutoLoader\AutoLoaderExtension
+
+
+autoloader:
+	forms:
+		path: %resourcesDir%/Forms/
+		allow: .+FormFactory$
+		ignore: ^HelloFormFactory$
+
+	controls:
+		path: %resourcesDir%/Controls/
+		allow: .+Control$
+
+
+services:
+	- Tests\Resources\TestClass
+

@@ -1,0 +1,14 @@
+parameters:
+	autoloader:
+		forms:
+			path: %appDir%/Forms/
+			allow: .+FormFactory$
+			ignore: ^HelloFormFactory$
+
+		controls:
+			path: %appDir%/MyModule/Controls/
+			allow: .+Control$
+
+
+extensions:
+	autoloader: Flexsyscz\AutoLoader\AutoLoaderExtension
