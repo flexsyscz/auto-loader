@@ -12,6 +12,9 @@ use Nette\Loaders\RobotLoader;
 use Nette\Utils\Strings;
 
 
+/**
+ * @deprecated use nette section "search: " from di
+ */
 class AutoLoaderExtension extends CompilerExtension
 {
 	public function getConfigSchema(): Nette\Schema\Schema
