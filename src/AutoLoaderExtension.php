@@ -78,7 +78,7 @@ class AutoLoaderExtension extends CompilerExtension
 						$name = explode('\\', $className);
 						$builder->addDefinition($this->prefix(sprintf('%s.%s', $prefix, Strings::firstLower(array_pop($name)))))
 							->setFactory($className)
-							->addTag(InjectExtension::TAG_INJECT);
+							->addTag(InjectExtension::TagInject);
 					}
 				}
 			}
